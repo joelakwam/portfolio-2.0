@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Oswald&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    background: #1d1c1c;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-size: 25px;
+}
+
+section {
+    height: 100vh;
+}
+
+.bar {
+    height: 10px;
+    width: 90px;
+    background-color: #f50057;
+    border-radius: 5px;
+    margin: 2em auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    margin-top: 4em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.top-nav {
+    overflow: hidden;
+    width: 100%;
+    background: #212121;
+    -webkit-box-shadow: 0 0 10px 0 #4645451a;
+    box-shadow: 0 0 10px 0 #4645451a;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding: .5em;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.top-nav ul li {
+    float: right;
+    font-size: 18px;
+    padding: 1em 2em;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+}
+
+.top-nav ul li a:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #f50057;
+}
+
+
+.home {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.cube {
+    z-index: -1;
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+
+.cubes :nth-child(3) {
+    animation-delay: 4s;
+    border: 2px solid red;
+    left: 80vw;
+    top: 50vh;
+}
+
+.cubes :nth-child(4) {
+    animation-delay: 6s;
+    border: 2px solid yellow;
+    left: 80vw;
+    top: 80vh;
+}
+
+.cubes :nth-child(5) {
+    animation-delay: 8s;
+    border: 2px solid orange;
+    left: 15vw;
+    top: 85vh;
+}
+
+.cubes :nth-child(6) {
+    animation-delay: 10s;
+    border: 2px solid magenta;
+    left: 10vw;
+    top: 60vh;
+}
+
+.cubes :nth-child(7) {
+    animation-delay: 12s;
+    border: 2px solid lightblue;
+    left: 55vw;
+    top: 20vh;
+}
+
+.cubes :nth-child(8) {
+    animation-delay: 14s;
+    border: 2px solid cyan;
+    left: 80vw;
+    top: 25vh;
+}
+
+.cubes :nth-child(9) {
+    animation-delay: 18s;
+    border: 2px solid blueviolet;
+    left: 60vw;
+    top: 90vh;
+}
+
+.cubes :nth-child(10) {
+    animation-delay: 20s;
+    border: 2px solid black;
+    left: 10vw;
+    top: 20vh;
+}
+
+.cubes :nth-child(11) {
+    animation-delay: 10s;
+    border: 2px solid brown;
+    left: 30vw;
+    top: 80vh;
+}
+
+.intro {
+    text-align: center;
+    margin: 20% auto;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.about {
+    padding: 5em;
+    margin: 4em;
+}
+
+.left-about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-about img {
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 4em;
+}
+
+.right-about{
+    text-align: center;
+}
+
+.right p {
+    color: #616161;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    margin: 7.5em auto;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 1em 2em;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    /* background-color: #f50057; */
+    background: linear-gradient(45deg, #072edd, #f50057);
+    border-radius: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.skills {
+    padding: 2em 10em;
+}
+
+.social-media-icons ul li a img {
+    height: 40px;
+}
+
+.social-media-icons ul {
+    list-style-type: none;
+    /* margin: 2em; */
+}
+
+.social-media-icons ul li {
+    margin: .5em;
+    display: inline;
+}
+
+.icons-container ul {
+    margin: 8em auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    list-style-type: none;
+}
+
+.projects {
+    padding: 2em 10em;
+}
+
+.icon {
+    height: 150px;
+}
+
+.contacts {
+    padding: 2em 10em;
+}
+
+.form-input {
+    font-size: 15px;
+    width: 70%;
+    padding: 1em;
+    margin: .5em auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #424242;
+}
+
+.send-message-btn {
+    font-size: 15px;
+    margin: 3em auto;
+    text-transform: uppercase;
+    background-color: #f50057;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding: 1em;
+}
+
+.send-message-btn:hover {
+    cursor: pointer;
+    border: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    color: #f50057;
+    line-height: 3;
+}
+
+.contact-details {
+    margin: 2em auto;
+    list-style-type: none;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .intro {
+        margin: 50% auto;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 4em;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .left-about img {
+        height: 150px;
+        border-radius: 75px;
+        margin-bottom: 2em;
+    }
+
+    .social-media-icons ul li a img {
+        height: 30px;
+    }
+
+    .skills,
+    .contacts,
+    .about {
+        padding: 2em;
+    }
+
+    .bar {
+        height: 5px;
+        width: 70px;
+        margin: 1em 0;
+    }
+
+    .about {
+        margin: 1em auto;
+        height: 150vh;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+
+    .btn {
+        margin: 5em auto;
+        font-size: 13px;
+    }
+
+    .icons-container ul li img {
+        height: 50px;
+    }
+
+    .form-input {
+        font-size: 13px;
+        width: 90%;
+        padding: 1em;
+        margin: .5em auto;
+    }
+
+    .send-message-btn {
+        font-size: 13px;
+        margin: 3em auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .bar {
+        height: 5px;
+        width: 70px;
+        margin: 2em auto;
+    }
+
+    .top-nav ul li {
+        font-size: 15px;
+        padding: 2em 1em;
+    }
+
+    .skills,
+    .projects,
+    .contacts,
+    .about {
+        padding: 2.5em;
+    }
+
+    .btn {
+        font-size: 15px;
+        margin: 4em auto;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .icons-container ul {
+        margin: 4em auto;
+    }
+
+    .icon {
+        height: 100px;
+    }
+}
+
+/* #f50057 */
+
+/* * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 12px;
+}
+
+.center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* End Non-Essential */
+
+/* .property-card {
+    height: 18em;
+    width: 14em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+} */
+
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+/* .property-image {
+    height: 6em;
+    width: 14em;
+    padding: 1em 2em;
+    position: Absolute;
+    top: 0px;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* Bottom Card Section */
+
+/* .property-description {
+    background-color: #FAFAFC;
+    height: 12em;
+    width: 14em;
+    position: absolute;
+    bottom: 0em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align: center;
+} */
+
+/* Social Icons */
+
+/* .property-social-icons {
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+} */
+
+/* Property Cards Hover States */
+
+/* .property-card:hover .property-description {
+    height: 0em;
+    padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+    height: 18em;
+}
+
+.property-card:hover .property-social-icons {
+    background-color: white;
+}
+
+.property-card:hover .property-social-icons:hover {
+    background-color: blue;
+    cursor: pointer;
+} */
+
+
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+} */
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat',sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
